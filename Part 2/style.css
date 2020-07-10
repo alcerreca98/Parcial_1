@@ -1,75 +1,82 @@
 header {
-
-
+  display:flex;
+  width: 100%;
+  visibility: visible;
 }
 
-
 h2 {
-
+  flex: 1;
+  border: 1px #ccc solid;
+  align-content: center;
+  justify-content: center;
 }
 
 .nav {
-
-
-  }
-
-  li {
-
-
-  }
-
-  .content{
-
+  display:flex;
+  width: 100%;
 }
 
-  .aside {
+li {
+  border: 1px #ccc solid;
+  width: 15%;
+  justify-content: space-around;
+}
 
-  }
+.content{
+  display:flex;
+  border: 1px #ccc solid;
+}
 
-  .slidebox{
+.aside {
+  flex: 1;
+  display:flex;
+  border: 1px #ccc solid;
+  flex-direction: column;
+}
 
-   
-  }
+.slidebox{
+  border: 1px #ccc solid;
+}
 
-  .article{
-
-  }
-
+.article{
+  flex: 2;
+  display:flex;
+  border: 1px #ccc solid;
+}
 
 .poem{
-
+  border: 1px #ccc solid;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
-  @media (min-width:600px) and (max-width: 990px)  {
-    .article {
-
-  } 
-header{
-
+@media (min-width:600px) and (max-width: 990px)  {
+  .article {
+    flex-direction: column;
+  }
 }
+
+  header{
+    visibility: hidden;
+  }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
+  header,.content{
+    visibility: hidden;
+  }
 
-header,.content{
-
-}
-
-.nav {
-
+  .nav {
+    display:flex;
+    flex-direction: column;
 
   }
 
-
-.nav > li {
-
-}
-
-
+  .nav > li {
+    justify-content: space-evenly;
+  }
 }
 
 
