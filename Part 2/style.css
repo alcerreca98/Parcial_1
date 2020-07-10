@@ -59,7 +59,6 @@ li {
 
   header{
     visibility: hidden;
-  }
 }
 
 /*  Small devices    */
@@ -76,6 +75,7 @@ li {
 
   .nav > li {
     justify-content: space-evenly;
+    width: 100%;
   }
 }
 
