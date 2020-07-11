@@ -25,7 +25,17 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
     iv) Asignarle el nombre correspondinete al arreglo en esa iteración
     v) Agregar el elmento como hijo del div "dummy". 
 */
+function challenge1(){
+    var numero = window.prompt("cuantos botones necesita")
+    let reference = getElementById("dummy");
 
+    for(i = 0; i < numero && i<nombres.length ; i++){
+        elemento=nombres[i]
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML = elemento;
+        reference.appendChild(btn);
+    }
+}
 // CREA TU FUNCION challenge1 aqui:
 
 
@@ -35,7 +45,13 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 */
 
 // CREA TU FUNCION challenge2 2 aquí.
+function challenge2(){
 
+    for(i = 0; i < nombres.length ; i++){
+        let string = nombres{i};
+        nombres[i]=string.toUpperCase();
+    }
+}
 
 
 /*
@@ -50,6 +66,17 @@ A) Define un objeto tipo "Dog" que reciba 3 parametros
 B) Crea 3 objectos siguiendo esa clase con diferentes valores
 
 eJ   var fido = new Dog("Fido","Cafe","Poodle")
+*/
+var Dog = {
+  Nombre: null,
+  Color: null,
+  Raza: null
+};
+
+var fido = new Dog("Fido","Cafe","Poodle")
+var rex = new Dog("Rex","negro","Pastor")
+var fido = new Dog("Chucho","Blanco","chihuahua")
+/*
 
 
 *****BONUS**** 10  puntos
